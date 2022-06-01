@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import MainSearch from "./pages/MainSearch";
-
+import NewPost from "./pages/Post";
 //browser-router
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -17,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Nvbar />}>
           <Route index element={<Home />} />
+          <Route path="newpost" element={<NewPost />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
           <Route path="mainsearch" from element={<MainSearch />} />

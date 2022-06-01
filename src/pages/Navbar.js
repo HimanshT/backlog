@@ -16,6 +16,7 @@ export default function Nvbar() {
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="justify-content-end" style={{ width: "100%" }}>
                                         <Nav.Link href="/">Home</Nav.Link>
+                                        <Nav.Link href="/newpost">Create Post</Nav.Link>
                                         <Nav.Link href="/signup">Signup</Nav.Link>
                                         <Nav.Link href="/login">Login</Nav.Link>
                                     </Nav>

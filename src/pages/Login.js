@@ -1,7 +1,33 @@
+import { Container, Form, Button, Row, Col } from "react-bootstrap";
+import '../css/login.css';
+import { Link } from "react-router-dom";
+
 export default function Login() {
     return (
         <>
-            <h1>This is login</h1>
+            <Container fluid className="mt-5">
+                <h1 className="text-center">Login Form</h1>
+                <Row>
+                    <Col md={{ span: 4, offset: 4 }}>
+                        <Form className="mt-5">
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <Form.Label>Email address</Form.Label>
+                                <Form.Control type="email" placeholder="Enter email" />
+                            </Form.Group>
+
+                            <Form.Group className="mb-3" controlId="formBasicPassword">
+                                <Form.Label>Password</Form.Label>
+                                <Form.Control type="password" placeholder="Password" />
+                            </Form.Group>
+
+                            <Button id="signin" type="submit">
+                                Submit
+                            </Button>
+                            <Link to="/signup"><Button id="signin" className="mx-3">Signup</Button></Link>
+                        </Form>
+                    </Col>
+                </Row>
+            </Container>
         </>
     )
 }
